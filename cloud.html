@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Weather Analysis</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
@@ -59,52 +59,57 @@
   <!-- Main text -->
   <div class="container">
     <div class="row">
-        <div class="col-8">
-            <article class="description-content">
+        <div class="col-md-6">
+          <article class="description-content">
       <!-- Description box -->
-        <div class="box" style="padding-bottom: 20px;">
-          <h1 class="title">Cloudiness</h1>
-          <div class="text-center">
-          
-        <img src="Resources/Images/lat_cloud.png" style="float: left" alt="Latitude vs. Max Temperature" width="300" align="left">
-        <p style="text-align:justify">From the graph above, there is no clear correlation between cloudiness and latitude. One could say that from 
-            the sample data, many cities have close to either 0% cloudiness or 90% cloudiness.    
+        <hr>
+        <h2 class="description-header" style="padding-bottom: 20px; color: rgb(160, 41, 150); text-align: center; text-decoration: underline;">CLOUDINESS</h2>
+          <hr>
+        <div class="text-center">
+         <img src="Resources/Images/lat_cloud.png" style="float: left" alt="Latitude vs. cloudiness" width="350" align="left">
+          <p style="text-align:justify"> 
+            From the graph above, there is no clear correlation between cloudiness and latitude. One could say that from 
+            the data, many cities have close to either 0 cloudiness or 90% cloudiness.    
         </p>
        </div>
     </div>
     
      
-      <!-- Visualizations -->
-      <div class="col-4">
-        <div class="container img-grid">
-        <h2>VISUALIZATIONS</h2>
-        <hr>
-          <div class="row row-cols-2" style="padding-bottom: 30px;"></div>
-            <div class="col">
-              <div class="title mx-auto d-flex justify-content-center" style="white-space: nowrap; width:150px">Latitude vs. Max Temperature</div>
-              <a href="temp.html"><img class="panel" src="Resources/Images/lat_temp.png" alt="Latitude vs. Temperature" ></a>
-            </div>
-            
-            <div class="col">
-              <div class="title" style="white-space: nowrap;">Latitude vs. Humidity</div>
-              <a href="humid.html"><img class="panel" src="Resources/Images/lat_humid.png" alt="Latitude vs. Humidity" ></a>
-            </div>
-
-            
-            <div class="col">
-              <div class="title"style="white-space: nowrap;"> Latitude vs. Cloudiness</div>
-              <a href="cloud.html"><img class="panel" src="Resources/Images/lat_cloud.png" alt="Latitude vs. Cloudiness"></a>
-            </div>
-
-            
-            <div class="col">
-              <div class="title" style="white-space: nowrap;">Latitude vs. Wind Speed</div>
-              <a href="wind.html"><img class="panel" src="Resources/Images/lat_wind.png" alt="Latitude vs. Wind Speed" ></a>
-            </div>
-          </div>
-        </div>
+     <!-- Visualizations -->
       
-     </div>
+     <div class="col-sm-12 col-md-6">
+      <div class="box">
+        <article class="description-content">
+      <hr>
+      <h3>VISUALIZATIONS</h3>
+      <hr>
+      <div class="container">
+        <div class="row">
+         
+            <div class="col-md-6">
+            <div class="title" style="color: teal;">Latitude vs. Temperature</div>
+            <a href="temp.html"><img src="Resources/Images/lat_temp.png" alt="Latitude vs. Temperature" width="200"></a>
+            </div>
+          
+            <div class="col-md-6">
+            <div class="title" style="color:rgb(51, 93, 209)">Latitude vs. Humidity</div>
+            <a href="humid.html"><img src="Resources/Images/lat_humid.png" alt="Latitude vs. Humidity" width="200"></a>
+            </div>
+
+            <div class="col-md-6">
+            <div class="title" style="color: rgb(160, 41, 150);"> Latitude vs. Cloudiness</div>
+            <a href="cloud.html"><img src="Resources/Images/lat_cloud.png" alt="Latitude vs. Cloudiness" width="200"></a>
+            </div>
+
+            <div class="col-md-6">
+            <div class="title" style="color: green;">Latitude vs. Wind Speed</div>
+            <a href="wind.html"><img src="Resources/Images/lat_wind.png" alt="Latitude vs. Wind Speed" width="200"></a>
+            </div>
+      </div>
+        </div>
+          </article>
+      </div>
+    
     </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
